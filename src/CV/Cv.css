@@ -1,17 +1,14 @@
 /* Color Palette */
 :root {
-  --primary-color: #F8B195;
-  --secondary-color: #F67280;
-  --light-color: #C06C84;
-  --dark-color: #6C5B7B;
-  --background-color: #355C7D;
-  --text-color: #FFFFFF;
-  --accent-color: #FFFFFF;
+  --primary-color: #6C5B7B;
+  --background-color: #FFFFFF;
+  --text-color: #000000;
 }
 
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  margin: 0;
 }
 
 .cv-container {
@@ -68,6 +65,7 @@ h2 {
 /* Tabs Styling */
 .nav-tabs {
   border-bottom: 2px solid var(--primary-color);
+  background-color: var(--background-color);
 }
 
 .nav-tabs .nav-link {
