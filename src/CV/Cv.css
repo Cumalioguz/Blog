@@ -1,6 +1,6 @@
 /* Color Palette */
 :root {
-  --primary-color: #6C5B7B;
+  --primary-color: #b42bbb;
   --background-color: #FFFFFF;
   --text-color: #000000;
 }
@@ -9,6 +9,9 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0;
+}
+.navbar-brand {
+  color: #000000;
 }
 
 .cv-container {
@@ -61,7 +64,27 @@ h2 {
   column-count: 2;
   column-gap: 40px;
 }
+.employee-name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
 
+/* Skill Styling*/
+.skills-frame {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
 /* Tabs Styling */
 .nav-tabs {
   border-bottom: 2px solid var(--primary-color);
@@ -108,4 +131,20 @@ h2 {
   .organizations {
     column-count: 1;
   }
+}
+
+/* Additional CSS */
+.nav-link {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.nav-link.active {
+  background-color: var(--primary-color);
+  color: white;
 }

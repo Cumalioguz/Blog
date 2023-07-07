@@ -1,8 +1,24 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card } from 'react-bootstrap';
 import profileImage from './images/profile-image.jpg';
+import profileImage2 from './images/profile-image2.jpeg';
+import companyLogo from './images/company-logo.jpg';
+const employees = [
+  {
+    name: 'Cumali Oğuz',
+    image: profileImage,
+    github: 'https://github.com/cumalioguz',
+    email: 'cumalioguz@hotmail.com',
+  },
+  {
+    name: 'Berat Sevim',
+    image: profileImage2,
+    github: 'https://github.com/beratsevim',
+    email: 'beratsvm@hotmail.com',
+  },
+];
 
-function Blog() {
+function Cv() {
   return (
     <Container>
       <Row>
@@ -20,96 +36,70 @@ function Blog() {
                         <p>İşbirliği felsefemiz, müşterilerimizle yakın bir ilişki kurmak ve proje sürecinde sürekli iletişim halinde olmaktır. Müşteri memnuniyetini en üst düzeyde tutmak için projelerinizi zamanında ve bütçeye uygun bir şekilde tamamlamaya özen gösteriyoruz.</p>
 
                         <p>Bizimle çalışarak işinizi büyütebilir, dijital varlığınızı güçlendirebilir ve hedef kitlenizi etkileyebilirsiniz. İşinizi daha da ileri taşımak için bize katılın ve size nasıl yardımcı olabileceğimizi keşfedin.</p>
-
-
                     </div>
+        </Col>
+      </Row>
 
+      <Row>
+        <Col className="text-center">
+          <div className="company-info">
+            <Image
+              src={companyLogo}
+              alt="Company Logo"
+              className="company-logo"
+              style={{
+                width: '200px',
+                height: '200px',
+                objectFit: 'cover',
+                marginBottom: '20px',
+              }}
+            />
+            <h1 className="text-center">Digi Illusionists</h1>
+          </div>
         </Col>
       </Row>
       <Row>
         <Col>
-          <Card className="mb-4">
-            <Card.Body>
-              <Row>
-                <Col md={4}>
-                  <Image
-                    src={profileImage}
-                    alt="Profile"
-                    className="profile-image rounded-circle"
-                    style={{
-                      width: '200px',
-                      height: '200px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Col>
-                <Col md={8}>
-                  <div className="personal-info">
-                    <h1>Cumali Oğuz</h1>
-                    <h2>Bilgisayar Mühendisi</h2>
-                    <p>
-                      cumalioguz1@gmail.com
-                      <br />
-                      +90 536 241 1948
-                      <br />
-                      <a href="https://github.com/Cumalioguz" style={{ color: '#F8B195' }}>
-                        https://github.com/Cumalioguz
-                      </a>
-                      <br />
-                      <a href="https://www.linkedin.com/in/cumali-oguz-337ab6201" style={{ color: '#F8B195' }}>
-                        in/cumali-oguz-337ab6201
-                      </a>
-                      <br />
-                      Mersin, Türkiye
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-          <Card>
-            <Card.Body>
-              <Row>
-                <Col md={4}>
-                  <Image
-                    src={profileImage}
-                    alt="Profile"
-                    className="profile-image rounded-circle"
-                    style={{
-                      width: '200px',
-                      height: '200px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                </Col>
-                <Col md={8}>
-                  <div className="personal-info">
-                    <h1>John Doe</h1>
-                    <h2>Web Developer</h2>
-                    <p>
-                      johndoe@example.com
-                      <br />
-                      +1 234 567 890
-                      <br />
-                      <a href="https://github.com/johndoe" style={{ color: '#F8B195' }}>
-                        https://github.com/johndoe
-                      </a>
-                      <br />
-                      <a href="https://www.linkedin.com/in/johndoe" style={{ color: '#F8B195' }}>
-                        in/johndoe
-                      </a>
-                      <br />
-                      New York, USA
-                    </p>
-                  </div>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
+          <div className="employee-section">
+            <div className="d-flex justify-content-center">
+              {employees.map((employee, index) => (
+                <Card className="mb-4" key={index}>
+                  <Card.Body>
+                    <Row>
+                      <Col md={12} className="text-center">
+                        <div className="employee">
+                          <Image
+                            src={employee.image}
+                            alt="Employee"
+                            className="employee-image rounded-circle"
+                            style={{
+                              width: '150px',
+                              height: '150px',
+                              objectFit: 'cover',
+                              marginBottom: '10px',
+                            }}
+                          />
+                          <h5 className="employee-name">{employee.name}</h5>
+                          <p>
+                            GitHub: <a href={employee.github}>{employee.github}</a>
+                            <br />
+                            E-posta: {employee.email}
+                          </p>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Card.Body>
+                </Card>
+              ))}
+            </div>
+          </div>
         </Col>
       </Row>
+
+
+      {/* Diğer bileşenler buraya gelecek */}
     </Container>
   );
 }
 
-export default Blog;
+export default Cv;

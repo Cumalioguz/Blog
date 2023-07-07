@@ -3,6 +3,7 @@ import { Container, Navbar, Nav, Tab, Tabs } from 'react-bootstrap';
 import './Cv.css';
 import Blog from './Blog';
 import Projects from './Projects';
+import companyLogo from './images/company-logo.jpg';
 
 function Cv() {
   const [activeTab, setActiveTab] = useState('blog');
@@ -13,8 +14,19 @@ function Cv() {
 
   return (
     <Container fluid>
-      <Navbar bg="white" variant="light" expand="lg">
-        <Navbar.Brand href="/">Uygulamanın Adı</Navbar.Brand>
+       <Navbar bg="white" variant="light" expand="lg">
+        <Navbar.Brand href="/">
+        <img
+            src={companyLogo}
+            alt="Company Logo"
+            className="company-logo"
+            style={{
+              height: '40px',
+              marginRight: '10px',
+            }}
+          />
+          Digi Illusionists
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ml-auto">
