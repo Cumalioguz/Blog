@@ -4,7 +4,8 @@ import './Cv.css';
 import Blog from './Blog';
 import Projects from './Projects';
 import companyLogo from './images/company-logo.jpg';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 function Cv() {
   const [activeTab, setActiveTab] = useState('blog');
 
@@ -12,15 +13,16 @@ function Cv() {
     setActiveTab(tab);
   };
   const scrollToSections = () => {
-    window.scrollTo({top: 1000, behavior: 'smooth'});
-    window.scrollTo({top: document.querySelector('#companyInfo').offsetTop, behavior: 'smooth'});
-    window.scrollTo({top: document.querySelector('#employees').offsetTop, behavior: 'smooth'}); 
+    window.scrollTo({ top: 1000, behavior: 'smooth' });
+    window.scrollTo({ top: document.querySelector('#companyInfo').offsetTop, behavior: 'smooth' });
+    window.scrollTo({ top: document.querySelector('#employees').offsetTop, behavior: 'smooth' });
   }
+
   return (
     <Container fluid>
-       <Navbar bg="white" variant="light" expand="lg">
-       <Navbar.Brand onClick={scrollToSections}> 
-        <img
+      <Navbar bg="white" variant="light" expand="lg">
+        <Navbar.Brand onClick={scrollToSections}>
+          <img
             src={companyLogo}
             alt="Company Logo"
             className="company-logo"
@@ -48,6 +50,11 @@ function Cv() {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Nav className="ml-auto">
+          <a href={`mailto:digiillusionists@gmail.com`}>
+            <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" style={{color: 'purple',marginRight: '20px', }} />
+          </a>
+        </Nav>
       </Navbar>
 
       <Tabs activeKey={activeTab}>
