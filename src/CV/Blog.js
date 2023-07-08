@@ -13,7 +13,7 @@ const employees = [
     name: 'Cumali Oğuz',
     image: profileImage,
     github: 'https://github.com/cumalioguz',
-    email: 'cumalioguz@hotmail.com',
+    email: 'cumalioguz1@gmail.com',
   },
   {
     name: 'Berat Sevim',
