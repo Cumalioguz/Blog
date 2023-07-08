@@ -14,7 +14,7 @@ const employees = [
     name: 'Berat Sevim',
     image: profileImage2,
     github: 'https://github.com/beratsevim',
-    email: 'beratsvm@hotmail.com',
+    email: 'berat.svm@hotmail.com',
   },
 ];
 
@@ -52,49 +52,50 @@ function Cv() {
                 height: '200px',
                 objectFit: 'cover',
                 marginBottom: '20px',
+                marginTop: '30px',
               }}
             />
-            <h1 className="text-center">Digi Illusionists</h1>
+           <h1 className="text-center" style={{ marginBottom: '20px' }}>Digi Illusionists</h1>
           </div>
         </Col>
       </Row>
       <Row>
-        <Col>
-          <div className="employee-section">
-            <div className="d-flex justify-content-center">
-              {employees.map((employee, index) => (
-                <Card className="mb-4" key={index}>
-                  <Card.Body>
-                    <Row>
-                      <Col md={12} className="text-center">
-                        <div className="employee">
-                          <Image
-                            src={employee.image}
-                            alt="Employee"
-                            className="employee-image rounded-circle"
-                            style={{
-                              width: '150px',
-                              height: '150px',
-                              objectFit: 'cover',
-                              marginBottom: '10px',
-                            }}
-                          />
-                          <h5 className="employee-name">{employee.name}</h5>
-                          <p>
-                            GitHub: <a href={employee.github}>{employee.github}</a>
-                            <br />
-                            E-posta: {employee.email}
-                          </p>
-                        </div>
-                      </Col>
-                    </Row>
-                  </Card.Body>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </Col>
-      </Row>
+  <Col>
+    <div className="employee-section">
+      <div className="d-flex justify-content-center">
+        {employees.map((employee, index) => (
+          <Card className="mb-4" key={index} style={{ margin: '0 5px' }}>
+            <Card.Body>
+              <Row>
+                <Col md={12} className="text-center">
+                  <div className="employee">
+                    <Image
+                      src={employee.image}
+                      alt="Employee"
+                      className="employee-image rounded-circle"
+                      style={{
+                        width: '150px',
+                        height: '150px',
+                        objectFit: 'cover',
+                        marginBottom: '10px',
+                      }}
+                    />
+                    <h5 className="employee-name">{employee.name}</h5>
+                    <p>
+                      GitHub: <a href={employee.github}>{employee.github}</a>
+                      <br />
+                      E-posta: {employee.email}
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </Card.Body>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </Col>
+</Row>
 
 
       {/* Diğer bileşenler buraya gelecek */}
