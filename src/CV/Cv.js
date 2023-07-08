@@ -11,11 +11,15 @@ function Cv() {
   const handleTabChange = (tab) => {
     setActiveTab(tab);
   };
-
+  const scrollToSections = () => {
+    window.scrollTo({top: 1000, behavior: 'smooth'});
+    window.scrollTo({top: document.querySelector('#companyInfo').offsetTop, behavior: 'smooth'});
+    window.scrollTo({top: document.querySelector('#employees').offsetTop, behavior: 'smooth'}); 
+  }
   return (
     <Container fluid>
        <Navbar bg="white" variant="light" expand="lg">
-        <Navbar.Brand href="/">
+       <Navbar.Brand onClick={scrollToSections}> 
         <img
             src={companyLogo}
             alt="Company Logo"
