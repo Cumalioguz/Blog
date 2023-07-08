@@ -27,7 +27,7 @@ function Cv() {
             alt="Company Logo"
             className="company-logo"
             style={{
-              height: '40px',
+              height: '50px',
               marginRight: '10px',
             }}
           />
