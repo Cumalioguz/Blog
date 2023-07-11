@@ -40,13 +40,12 @@ function Cv() {
               className={`nav-link ${activeTab === 'blog' ? 'active' : ''}`}
               onClick={() => handleTabChange('blog')}
             >
-              Blog
-            </Nav.Link>
+Our Team            </Nav.Link>
             <Nav.Link
               className={`nav-link ${activeTab === 'projects' ? 'active' : ''}`}
               onClick={() => handleTabChange('projects')}
             >
-              Projeler
+              Projects
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

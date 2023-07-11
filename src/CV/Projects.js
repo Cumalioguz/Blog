@@ -4,11 +4,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Cv.css';
-import mekanbulImage from './images/mekanbul-image.jpg';
-import carprojectImage from './images/carproject-image.jpg';
-import graduationImage from './images/graduation-image.jpg';
-import parlakgelecekImage from './images/parlakgelecek-image.jpg';
-import azureprojectImage from './images/azureproject-image.jpg';
+import union1 from './images/1.jpg';
+import union2 from './images/2.jpg';
+import ebus from './images/3.jpg';
+import social from './images/4.jpg';
+import resturant1 from './images/5.jpg';
+import resturant2 from './images/6.jpg';
+import mekanbul from './images/7.jpg';
 
 const Projects = () => {
   const sliderSettings = {
@@ -24,76 +26,69 @@ const Projects = () => {
       <Row>
         <Col>
           <div className="section">
-            <h2>Projeler</h2>
+            <h2>Projects</h2>
             <Tabs defaultActiveKey="mekanbul" id="projects-tabs" className="custom-tabs">
-              <Tab eventKey="mekanbul" title="MekanBul">
+              <Tab eventKey="mekanbul" title="uni-ON">
                 <div className="project-details">
                   <Slider {...sliderSettings}>
                     <div>
-                      <Image src={mekanbulImage} alt="MekanBul" className="project-image" />
-                      <p>React (MERN) kullanarak yer bulma sitesi oluşturdum.</p>
+                      <Image src={union1} alt="MekanBul" className="project-image" />
+
                     </div>
                     <div>
-                      <Image src={mekanbulImage} alt="MekanBul" className="project-image" />
-                      <p>React (MERN) kullanarak yer bulma sitesi oluşturdum.</p>
+                      <Image src={union2} alt="MekanBul" className="project-image" />
+
                     </div>
-                    <div>
-                      <Image src={mekanbulImage} alt="MekanBul" className="project-image" />
-                      <p>React (MERN) kullanarak yer bulma sitesi oluşturdum.</p>
-                    </div>
-                    {/* Diğer resimleri buraya ekleyin */}
+
+
                   </Slider>
                 </div>
               </Tab>
-              <Tab eventKey="carproject" title="CarProject">
+              <Tab eventKey="carproject" title="E-Bus">
                 <div className="project-details">
                   <Slider {...sliderSettings}>
                     <div>
-                      <Image src={carprojectImage} alt="CarProject" className="project-image" />
-                      <p>.Net kullanarak CarProject web sitesi oluşturdum.</p>
+                      <Image src={ebus} alt="CarProject" className="project-image" />
+
                     </div>
-                    {/* Diğer resimleri buraya ekleyin */}
+
                   </Slider>
                 </div>
               </Tab>
-              <Tab eventKey="graduation" title="Mezuniyet Projesi">
+              <Tab eventKey="graduation" title="Social App">
                 <div className="project-details">
                   <Slider {...sliderSettings}>
                     <div>
-                      <Image src={graduationImage} alt="Mezuniyet Projesi" className="project-image" />
-                      <p>React-Native kullanarak mobil uygulama geliştiriyorum.</p>
+                      <Image src={social} alt="Mezuniyet Projesi" className="project-image" />
+
                     </div>
-                    {/* Diğer resimleri buraya ekleyin */}
+
                   </Slider>
                 </div>
               </Tab>
-              <Tab eventKey="parlakgelecek" title="ParlakGelecek">
+              <Tab eventKey="parlakgelecek" title="Restaurant App">
                 <div className="project-details">
                   <Slider {...sliderSettings}>
                     <div>
-                      <Image src={parlakgelecekImage} alt="ParlakGelecek" className="project-image" />
-                      <p>HTML-CSS-Javascript kullanarak bir iş sitesi oluşturdum.</p>
+                      <Image src={resturant1} alt="ParlakGelecek" className="project-image" />
+
                     </div>
-                    {/* Diğer resimleri buraya ekleyin */}
+                    <div>
+                      <Image src={resturant2} alt="ParlakGelecek" className="project-image" />
+
+                    </div>
+
                   </Slider>
                 </div>
               </Tab>
-              <Tab eventKey="azureproject" title="AzureProject">
+              <Tab eventKey="azureproject" title="Mekan Bul">
                 <div className="project-details">
                   <Slider {...sliderSettings}>
                     <div>
-                      <Image src={azureprojectImage} alt="AzureProject" className="project-image" />
-                      <p>Azure'da kendimi geliştirmek için bir proje yaptım.</p>
+                      <Image src={mekanbul} alt="AzureProject" className="project-image" />
+
                     </div>
-                    <div>
-                      <Image src={azureprojectImage} alt="AzureProject" className="project-image" />
-                      <p>Diğer resimlerin açıklamalarını buraya ekleyin.</p>
-                    </div>
-                    <div>
-                      <Image src={azureprojectImage} alt="AzureProject" className="project-image" />
-                      <p>Diğer resimlerin açıklamalarını buraya ekleyin.</p>
-                    </div>
-                    {/* Diğer resimleri buraya ekleyin */}
+
                   </Slider>
                 </div>
               </Tab>
@@ -101,108 +96,56 @@ const Projects = () => {
           </div>
 
           <div className="section">
-        <h2>Skills</h2>
-       
-        <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="4">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="5">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
-        <Accordion.Body>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
-        </div>
-    
+            <h2>Project Descriptions</h2>
+
+            <Accordion defaultActiveKey="0" style={{ marginBottom: '20px' }}>
+  <Accordion.Item eventKey="0" style={{ marginBottom: '10px', border: 'none' }}>
+    <Accordion.Header style={{ background: 'none', padding: '0', borderBottom: '1px solid #ddd', color: 'black' }}>
+      Union
+    </Accordion.Header>
+    <Accordion.Body style={{ marginBottom: '10px' }}>
+      Union is a mobile application developed using React Native. React Native offers the advantage of compatibility with both iOS and Android platforms. The project utilizes Firebase for data storage. It leverages Firebase's Firestore real-time database and features like Cloud Functions, providing real-time updates and additional functionalities.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="1" style={{ marginBottom: '10px', border: 'none' }}>
+    <Accordion.Header style={{ background: 'none', padding: '0', borderBottom: '1px solid #ddd', color: 'black' }}>
+      E-bus
+    </Accordion.Header>
+    <Accordion.Body style={{ marginBottom: '10px' }}>
+      E-bus is a mobile application developed using React Native. It is an Expo project, which offers advantages such as a fast development process and the ability to run on multiple platforms with a single codebase. The app allows users to select and reserve bus tickets based on seat availability.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="2" style={{ marginBottom: '10px', border: 'none' }}>
+    <Accordion.Header style={{ background: 'none', padding: '0', borderBottom: '1px solid #ddd', color: 'black' }}>
+      Social App
+    </Accordion.Header>
+    <Accordion.Body style={{ marginBottom: '10px' }}>
+      Social App is a mobile application developed using React Native. The project utilizes Firebase for user authentication and data storage. React Native offers advantages such as rapid prototyping, user-friendly interface design, and high performance.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="3" style={{ marginBottom: '10px', border: 'none' }}>
+    <Accordion.Header style={{ background: 'none', padding: '0', borderBottom: '1px solid #ddd', color: 'black' }}>
+      Restaurant App
+    </Accordion.Header>
+    <Accordion.Body style={{ marginBottom: '10px' }}>
+      Restaurant App is a web project developed using JavaScript, HTML, CSS, and Bootstrap. These languages and frameworks offer advantages such as user-friendly interface design and fast development processes. JavaScript is a popular language supported by web browsers and has a large community. Bootstrap provides ready-to-use components and responsive design features, enabling the creation of professional-looking websites quickly and easily.
+    </Accordion.Body>
+  </Accordion.Item>
+  <Accordion.Item eventKey="4" style={{ marginBottom: '10px', border: 'none' }}>
+    <Accordion.Header style={{ background: 'none', padding: '0', borderBottom: '1px solid #ddd', color: 'black' }}>
+      Mekan Bul
+    </Accordion.Header>
+    <Accordion.Body style={{ marginBottom: '10px' }}>
+      Mekan Bul is a web project developed using React.js and the MERN stack (MongoDB, Express.js, React.js, Node.js). React.js enables the creation of user-friendly interfaces and the development of reusable components through its component-based architecture. The MERN stack utilizes MongoDB and Node.js for data storage and processing capabilities, while React.js is used to build the web application's interface. This allows the app to offer functionalities such as finding nearby places based on location.
+    </Accordion.Body>
+  </Accordion.Item>
+</Accordion>
+
+
+
+
+          </div>
+
         </Col>
       </Row>
     </Container>

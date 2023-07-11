@@ -29,18 +29,19 @@ function Blog() {
       <Row>
         <Col>
           <div className="section">
-            <h2>Profile</h2>
-            <p>Merhaba! Biz, profesyonel bir web ve mobil uygulama geliştirme ekibi olarak buradayız. İşinizi dijital dünyada öne çıkarmak ve kullanıcıların dikkatini çekmek için birlikte çalışma fırsatı sunuyoruz. Ekibimiz, tutkulu ve deneyimli bireylerden oluşuyor. Hem web hem de mobil uygulama geliştirme konusunda uzmanız ve her bir projede en iyi sonuçları elde etmek için birlikte çalışıyoruz.</p>
+          <h2>About Us</h2>
+<p>Hello! We are a professional web and mobile app development team here to help you stand out in the digital world and captivate users. Our team consists of passionate and experienced individuals. We specialize in both web and mobile app development, working together to achieve the best results for each project.</p>
 
-            <p>Web geliştirmede, HTML, CSS ve JavaScript gibi temel dilleri kullanırken, aynı zamanda popüler çerçeveler ve kütüphaneler olan React ve Angular gibi teknolojilere de hakimiz. Bu sayede, modern, kullanıcı dostu ve duyarlı web siteleri oluşturmak için gereken beceri ve bilgiye sahibiz.</p>
+<p>In web development, we use fundamental languages such as HTML, CSS, and JavaScript, as well as popular frameworks and libraries like React and Angular. This equips us with the skills and knowledge to create modern, user-friendly, and responsive websites.</p>
 
-            <p>Mobil uygulama geliştirme konusunda da güçlüyüz. iOS ve Android platformlarında uzmanlaşmışız. React Native ile mobil uygulamalar geliştiriyoruz, React Native, hem iOS hem de Android platformlarında çalışabilen tek bir kod tabanıyla geliştirme yapmamı sağlıyor. Bu, daha hızlı bir geliştirme süreci ve maliyet tasarrufu sağlarken, uygulamalarımın performansını ve kullanılabilirliğini en üst düzeye çıkarıyorum. Kotlin ve Java ile Android uygulamaları oluşturuyoruz. Kullanıcıların mobil cihazlarda sorunsuz bir deneyim yaşamasını sağlamak için güncel teknolojileri ve en iyi uygulamaları takip ediyoruz.</p>
+<p>We are also strong in mobile app development, specializing in iOS and Android platforms. We develop mobile apps using React Native, which allows us to build apps with a single codebase that works on both iOS and Android platforms. This provides faster development cycles, cost efficiency, and maximizes the performance and usability of the apps. For Android app development, we work with Kotlin and Java, staying up to date with the latest technologies and best practices to ensure a seamless experience for users on mobile devices.</p>
 
-            <p>Ekibimiz ayrıca veritabanı yönetimi, API entegrasyonu, güvenlik önlemleri ve performans optimizasyonu gibi konularda da uzmanlık sağlıyor. Projelerinizi her aşamasında aktif bir şekilde yönetiyoruz ve ihtiyaçlarınızı anlayarak size özel çözümler sunuyoruz.</p>
+<p>Our team also excels in database management, API integration, security measures, and performance optimization. We actively manage projects at every stage and provide tailored solutions based on your needs.</p>
 
-            <p>İşbirliği felsefemiz, müşterilerimizle yakın bir ilişki kurmak ve proje sürecinde sürekli iletişim halinde olmaktır. Müşteri memnuniyetini en üst düzeyde tutmak için projelerinizi zamanında ve bütçeye uygun bir şekilde tamamlamaya özen gösteriyoruz.</p>
+<p>Our collaboration philosophy is to establish close relationships with our clients and maintain constant communication throughout the project process. We strive to deliver projects on time and within budget, prioritizing customer satisfaction.</p>
 
-            <p>Bizimle çalışarak işinizi büyütebilir, dijital varlığınızı güçlendirebilir ve hedef kitlenizi etkileyebilirsiniz. İşinizi daha da ileri taşımak için bize katılın ve size nasıl yardımcı olabileceğimizi keşfedin.</p>
+<p>By working with us, you can grow your business, strengthen your digital presence, and make an impact on your target audience. Join us to take your business to the next level and discover how we can assist you.</p>
+
 
 
           </div>
